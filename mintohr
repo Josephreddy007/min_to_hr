@@ -1,0 +1,14 @@
+#timer in minutes to hours
+print("Enter time in minutes:")
+minutes=float(input())
+sec=minutes*60
+hour=int(minutes//60)
+min=int(minutes%60)
+seco=int((minutes*100)%100)
+if(seco>=60):
+    min+=1
+    seco%=60
+    print("Time is:",hour,"hours",min,"minutes and ",seco,"seconds.")  
+else:
+   
+    print("Time is:",hour,"hours",min,"minutes and ",seco,"seconds.") 
